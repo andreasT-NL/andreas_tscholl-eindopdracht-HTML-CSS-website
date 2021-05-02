@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Order - Avant mon Arrivée</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <ul>
+                    <li><a class="about" href="about.html">ABOUT</a></li>
+                    <li><a class="active" href="order.html">ORDER</a></li>
+                    <li><a class="contact" href="mailto:info[at]avantmonarrivee.com">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a href="index.html"><img class="drawing" src="/graphics/krul01.svg" alt="HOME"></a>
+        </header>
+        <section_1 class="section_1">
+            <h1>Customize and order your own photo album</h1>
+            <p>We're thilled to see your interest in this unique gift. In order to chose the materials and colours for
+                the book and the camera that suits you best, please use the form bellow. </p>
+            <p>We will send you the book and camera within approximately four weeks. </p>
+            <br>
+            <!-- optional extended form-version 
+                <p>If you wish to order a fully customized book, please fill in the <a href="custom_order.html"> extended form</a>.</p> -->
+            <img src="/photos/3_covers.png" alt="boek01">
+            <br>
+        </section_1>
+        <section_2 class="section_2">
+            <h2>Order specifications</h2>
+            <form name="order" method="POST" data-netlify="true">
+                <h3>Cover</h3>
+                <div>
+                    <p><label for="covercolor">Cover colour:</label>
+                        <input type="color" id="covercolor" name="covercolor" value="#0037B8">
+                        <label for="covertext">Text-colour:</label>
+                        <input type="color" id="covertext" name="covertext" value="#D2AA0A">
+                    </p>
+                    <p><label for="size">Size (w/h):</label>
+                        <select id="size" name="size">
+                            <option value="size1">185 x 215 mm</option>
+                            <option value="size2">185 x 280 mm</option>
+                        </select>
+                    </p>
+                </div>
+                <h3>Book-block</h3>
+                <div>
+                    <p><label for="papertype">Type of paper:</label>
+                        <select id="papertype" name="papertype">
+                            <option value="roman">Roman</option>
+                            <option value="coated">Coated</option>
+                            <option value="glossy">Glossy</option>
+                        </select>
+                    </p>
+                    <p><label for="papercolour">Paper-colour:</label>
+                        <select id="papercolour" name="papercolour">
+                            <option value="cream">Cream</option>
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                            <option value="gray">Gray</option>
+                        </select>
+                    </p>
+                </div>
+                <h3>Camera</h3>
+                <div>
+                    <p><input type="number" min="1" id="camera" name="camera" value="1">
+                        <label for="camera"></label>
+                    </p>
+                    <p>please select the amount of camera's you'd like to order. (note: each camera contains 27 possible
+                        photographs.)</p>
+                </div>
+                <h3>Contact details</h3>
+                <div>
+                    <p><label>First name:</label>
+                        <input type="text" name="firstname" />
+                        <label>Last name:</label>
+                        <input type="text" name="lastname" />
+                        <label>Street / house number:</label>
+                        <input type="text" name="street" />
+                        <label>City / Zip-code / Country:</label>
+                        <input type="text" name="city" />
+                        <label>Email:</label>
+                        <input type="email" name="email" />
+                    </p>
+                </div>
+                <p><button class="button_submit" type="submit">Submit your order</button></p>
+            </form>
+        </section_2>
+
+        <footer>
+            <ul>
+                <li><a href="https://www.instagram.com"><img src="/photos/IG_white.png" class="social"></a></li>
+                <li><a href="https://facebook.com"><img src="/photos/FB_white.png" class="social"></a></li>
+            </ul>
+            <h5>© All content on this website is owned by "avant mon arrivée".</h5>
+        </footer>
+    </div> <!-- /container -->
+</body>
+
+</html>
